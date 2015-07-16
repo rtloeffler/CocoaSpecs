@@ -74,7 +74,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :http => "http://github.com/seamgen/CocoaSpecs/raw/master/Specs/OpenCV/2.4.11/opencv2.framework.zip" }
+  s.source       = { :http => "https://raw.githubusercontent.com/seamgen/CocoaSpecs/master/Specs/OpenCV/2.4.11/opencv2.framework.zip",
+                     :sha1 => "9550fcc4d905bfd28d2108ff80d06dc3d7feb2b4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -103,7 +104,7 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   s.preserve_paths = "opencv2.framework"
-
+  s.header_mappings_dir = 'Headers'
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -114,8 +115,9 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   s.frameworks = "Accelerate", "AssetsLibrary", "AVFoundation", "CoreGraphics", "CoreImage", "CoreMedia", "CoreVideo", "Foundation", "QuartzCore", "UIKit"
 
-  s.libraries = "stdc++"
+  s.libraries = "stdc++", "c++"
 
+  s.vendored_libraries = "opencv2.framework/Versions/A/opencv2"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -127,5 +129,6 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PODS_ROOT)/OpenCV' }
 
 end
