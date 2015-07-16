@@ -1,4 +1,6 @@
-# CocoaSpecs ![build status](https://cloud1.codingmerc.com/status/cocoaspecs.png)
+![build status](https://cloud1.codingmerc.com/status/cocoaspecs.png)
+
+# CocoaSpecs 
 This is Seamgen's custom public [CocoaPods](https://guides.cocoapods.org/making/private-cocoapods.html) spec repository. Use at your own risk!
 
 ## Add Seamgen Repo to your CocoaPods installation
