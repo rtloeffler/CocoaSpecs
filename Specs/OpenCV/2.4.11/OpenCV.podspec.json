@@ -10,7 +10,7 @@
   },
   "authors": "opencv.org",
   "source": {
-    "http": "https://raw.githubusercontent.com/seamgen/CocoaSpecs/master/Specs/OpenCV/2.4.11/opencv2.framework.zip",
+    "http": "https://raw.githubusercontent.com/seamgen/CocoaPodsFiles/master/Files/OpenCV/2.4.11/opencv2.framework.zip",
     "sha1": "9550fcc4d905bfd28d2108ff80d06dc3d7feb2b4"
   },
   "platforms": {
