@@ -5,11 +5,11 @@ This is Seamgen's custom public [CocoaPods](https://guides.cocoapods.org/making/
 
 ## Add Seamgen Repo to your CocoaPods installation
 
-`$ pod repo add seamgen-specs git@github.com:seamgen/CocoaSpecs.git`
+`$ pod repo add seamgen git@github.com:seamgen/CocoaSpecs.git`
 
 To check if your installation is successful and ready to go:
 
-`$ cd ~/.cocoapods/repos/seamgen-specs`
+`$ cd ~/.cocoapods/repos/seamgen`
 
 `$ pod repo lint .`
 
