@@ -10,8 +10,8 @@
   },
   "authors": "opencv.org",
   "source": {
-    "http": "https://raw.githubusercontent.com/seamgen/CocoaPodsFiles/master/Files/OpenCV/2.4.9/opencv2.framework.zip",
-    "sha1" : "e6bc7115a5372334afa04824f1b0700fc4ac660f"
+    "http": "https://cloud1.codingmerc.com/files/OpenCV/2.4.9/opencv2.framework.zip",
+    "sha1": "e6bc7115a5372334afa04824f1b0700fc4ac660f"
   },
   "platforms": {
     "ios": "4.3"
